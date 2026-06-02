@@ -1,19 +1,39 @@
 export default function Home() {
   return (
-    <main className="p-10">
-      <h1 className="text-4xl font-bold">
-        Gestão de Treinos FOCA
+    <div>
+      <h1 className="text-4xl font-bold mb-6">
+        Dashboard
       </h1>
 
-      <div className="mt-8 space-y-4">
-        <a href="/atletas">Atletas</a>
-        <br />
-        <a href="/equipas">Equipas</a>
-        <br />
-        <a href="/treinos">Treinos</a>
-        <br />
-        <a href="/planeamento">Planeamento</a>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h2 className="text-lg font-semibold">
+            Atletas
+          </h2>
+          <p className="text-3xl mt-2">1</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h2 className="text-lg font-semibold">
+            Equipas
+          </h2>
+          <p className="text-3xl mt-2">0</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h2 className="text-lg font-semibold">
+            Treinos
+          </h2>
+          <p className="text-3xl mt-2">0</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h2 className="text-lg font-semibold">
+            Competições
+          </h2>
+          <p className="text-3xl mt-2">0</p>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
